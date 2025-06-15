@@ -24,6 +24,16 @@
     .container {
       max-width: 55rem !important;
     }
+
+    /* 确保图片不会过大，并且能适应容器 */
+    .picture img {
+      max-width: 100%; /* 图片宽度不超过容器 */
+      height: auto;   /* 高度自适应 */
+    }
+
+    /* 右侧文字自适应 */
+    .head .info {
+      width: 100%; /* 确保文字部分能够扩展 */
 </style>
 
 <link rel="apple-touch-icon" type="img/apple-touch-icon.png" sizes="180x180" href="/apple-touch-icon.png">
