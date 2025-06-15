@@ -97,40 +97,47 @@
                  leading-loose md:px-0 px-2 z-0"
           role="main">
     
-<div class="container" style="max-width: 60rem;">
-    <div class="flex">
-        <!-- 图片部分，强制占总宽度的 1/4 -->
-        <div class="picture p-0 ml-0 w-1/4 max-w-[25%]" itemscope itemtype="http://schema.org/ImageObject">
-            <picture>
-                <source srcset="img/main.jpg">
-                <img class="main-image u-photo w-full" itemprop="contentUrl" alt="Profile picture" src="img/main.jpg">
-            </picture>
-        </div>
-
-        <!-- 右侧内容部分，占 3/4 宽度 -->
-        <div class="ml-4 w-3/4">
-            <a class="u-url font-bold" rel="me" itemprop="url" href="https://jinhanx.github.io/">
-                <h1 class="text-black dark:text-zinc-300 p-name border-0 mr-0" itemprop="name">Jinhan Xie</h1>
-            </a>
-            <h2 itemprop="jobTitle" class="text-xl my-0 border-none">Associate Professor</h2>
+<div class="head container grid sm:grid-cols-2 grid-cols-1
+            justify-around flex-wrap items-center"
+     itemscope itemtype="http://schema.org/Person">
+    <div class="picture p-0 ml-0 max-w-[80%] basis-20 grow shrink"
+         itemscope itemtype="http://schema.org/ImageObject">
+        <picture>
+            
+            <source srcset="img/main.jpg"
+                    >
+            <img class="main-image u-photo"
+            itemprop="contentUrl" alt="Profile picture"
+                 src="img/main.jpg">
+        </picture>
+    </div>
+    <div class="mx-1 ml-1 basis-60 grow shrink-2 leading-snug text-base">
+        <a  class="u-url font-bold" rel="me" itemprop="url" href="https://jinhanx.github.io/">
+            <h1 class="text-black dark:text-zinc-300 p-name border-0"
+                itemprop="name">Jinhan Xie
+            </h1>
+        </a>
+        
+        <h2 itemprop="jobTitle" class="text-xl my-0 border-none">Associate Professor</h2>
+            
             <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <span itemprop="streetAddress">
-                    Yunnan Key Laboratory of Statistical Modeling and Data Analysis
-                    <br>
-                    Yunnan University, Kunming, 650091, China
-                    <br>
-                    E-mail:
-                    <a href="mailto:jinhanxie@ynu.edu.cn">jinhanxie@ynu.edu.cn</a>
-                    or
-                    <a href="mailto:jinhanxie@163.com">jinhanxie@163.com</a>
-                </span>
+            <span itemprop="streetAddress">
+                Yunnan Key Laboratory of Statistical Modeling and Data Analysis
+	        <br>
+	        Yunnan University, Kunming, 650091, China
+		<br>
+	        E-mail:
+	        <a href="mailto:jinhanxie@ynu.edu.cn">jinhanxie@ynu.edu.cn</a>
+	        or
+	        <a href="mailto:jinhanxie@163.com">jinhanxie@163.com</a>
+            </span>
             </div>
-        </div>
+            
     </div>
 </div>
 	    
 <h1 id="about-me">About Me</h1>
-<p>Hello,sdfsd I am Jinhan Xie, often go by Perry, an associate professor in the <a href="https://uwaterloo.ca/statistics-and-actuarial-science/">Department of Statistics and Actuarial Science</a> at the <a href="https://uwaterloo.ca/">University of Waterloo</a>.</p>
+<p>Hello, I am Jinhan Xie, often go by Perry, an associate professor in the <a href="https://uwaterloo.ca/statistics-and-actuarial-science/">Department of Statistics and Actuarial Science</a> at the <a href="https://uwaterloo.ca/">University of Waterloo</a>.</p>
 <h2 id="research-interest">Research Interest</h2>
 <ul>
 <li>Functional data analysis</li>
