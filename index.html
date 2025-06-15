@@ -20,12 +20,12 @@
 
 <link rel="stylesheet" href="https://jinhanx.github.io/css/style.min.css">
 
-<style>
+<!-- <style>
     .container {
       max-width: 60rem !important;
       width: 100%;
     }
-</style>
+</style> -->
 
 <link rel="apple-touch-icon" type="img/apple-touch-icon.png" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="img/favicon.ico" href="/favicon.ico">
@@ -97,18 +97,21 @@
                  leading-loose md:px-0 px-2 z-0"
           role="main">
     
-<div class="head container flex flex-wrap items-center"
+<div class="head container flex items-start"  <!-- 使用 items-start 让内容顶部对齐 -->
      itemscope itemtype="http://schema.org/Person">
-    <div class="picture w-full md:w-1/4 p-0"
+    <!-- 图片容器：固定1/4宽度，添加右侧间距 -->
+    <div class="picture w-1/4 pr-4"
          itemscope itemtype="http://schema.org/ImageObject">
         <picture>
             <source srcset="img/main.jpg">
-            <img class="main-image u-photo w-full max-w-full"
+            <img class="main-image u-photo w-full h-auto"
                  itemprop="contentUrl" alt="Profile picture"
                  src="img/main.jpg">
         </picture>
     </div>
-    <div class="w-full md:w-3/4 px-4 leading-snug text-base text-justify">
+    
+    <!-- 文字容器：固定3/4宽度，两端对齐 -->
+    <div class="w-3/4 text-justify">
         <a class="u-url font-bold" rel="me" itemprop="url" href="https://jinhanx.github.io/">
             <h1 class="text-black dark:text-zinc-300 p-name border-0"
                 itemprop="name">Jinhan Xie
@@ -133,7 +136,7 @@
 </div>
 	    
 <h1 id="about-me">About Me</h1>
-<p>Hello, I am Jinhan Xie, often go by Perry, an associate professor in the <a href="https://uwaterloo.ca/statistics-and-actuarial-science/">Department of Statistics and Actuarial Science</a> at the <a href="https://uwaterloo.ca/">University of Waterloo</a>.</p>
+<p>Hello, adsfasI am Jinhan Xie, often go by Perry, an associate professor in the <a href="https://uwaterloo.ca/statistics-and-actuarial-science/">Department of Statistics and Actuarial Science</a> at the <a href="https://uwaterloo.ca/">University of Waterloo</a>.</p>
 <h2 id="research-interest">Research Interest</h2>
 <ul>
 <li>Functional data analysis</li>
