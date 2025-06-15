@@ -98,18 +98,18 @@
     
 <div class="head container grid grid-cols-1 sm:grid-cols-2 items-start gap-4"
      itemscope itemtype="http://schema.org/Person">
-  <!-- 左侧：去掉居中，让图片贴左 -->
-  <div class="picture p-0 max-w-full"
+  <!-- 左侧：去掉居中，使图片紧贴左边 -->
+  <div class="picture p-0 ml-0"  <!-- 添加 ml-0 确保没有左边距 -->
        itemscope itemtype="http://schema.org/ImageObject">
     <picture>
-	<source srcset="img/main.jpg">
-	<img
-	    class="main-image u-photo"
-	    itemprop="contentUrl"
-	    alt="Profile picture"
-	    src="img/main.jpg"
-	    style="width: 200px; height: auto;"  <!-- 设置宽度为 200px，高度自动调整 -->
-	>
+      <source srcset="img/main.jpg">
+      <img
+          class="main-image u-photo"
+          itemprop="contentUrl"
+          alt="Profile picture"
+          src="img/main.jpg"
+          style="width: 300px; height: auto;"  <!-- 图片大小设置为 300px -->
+      >
     </picture>
   </div>
 
@@ -122,7 +122,7 @@
       href="https://jinhanx.github.io/"
     >
       <h1 class="text-black dark:text-zinc-300 p-name border-0"
-                itemprop="name">Jinhan Xie
+          itemprop="name">Jinhan Xie
       </h1>
     </a>
 
@@ -133,7 +133,7 @@
         Yunnan Key Laboratory of Statistical Modeling and Data Analysis
         <br>
         Yunnan University, Kunming, 650091, China
-	<br>
+        <br>
         E-mail:
         <a href="mailto:jinhanxie@ynu.edu.cn">jinhanxie@ynu.edu.cn</a>
         or
