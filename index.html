@@ -22,23 +22,8 @@
 
 <style>
     .container {
-      max-width: 55rem !important;
+      max-width: 60rem !important;
     }
-
-    /* 确保图片不会过大，并且能适应容器 */
-    .picture img {
-      max-width: 100%; /* 图片宽度不超过容器 */
-      height: auto;   /* 高度自适应 */
-    }
-
-    /* 右侧文字自适应 */
-    .head .info {
-	    display: flex;
-	    flex-direction: column; /* 纵向排列文字 */
-	    justify-content: flex-start; /* 顶部对齐 */
-	    flex-grow: 1;  /* 右侧文字部分占据剩余空间 */
-	    margin-left: 2em;  /* 控制左右边距 */
-     }
 </style>
 
 <link rel="apple-touch-icon" type="img/apple-touch-icon.png" sizes="180x180" href="/apple-touch-icon.png">
@@ -126,7 +111,7 @@
         </div>
 
         <!-- 文字部分：紧随其后，并且保持 2em 的间距 -->
-        <div class="mx-4 ml-2 basis-60 grow shrink-2 leading-snug text-base" style="margin-left: 2em;">
+        <div class="mx-4 ml-2 basis-120 grow shrink-2 leading-snug text-base" style="margin-left: 2em;">
             <a class="u-url font-bold" rel="me" itemprop="url" href="https://jinhanx.github.io/">
                 <h1 class="text-black dark:text-zinc-300 p-name border-0"
                     itemprop="name">Jinhan Xie
