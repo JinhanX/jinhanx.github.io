@@ -96,40 +96,44 @@
                  leading-loose md:px-0 px-2 z-0"
           role="main">
     
-    <div class="head container grid sm:grid-cols-2 grid-cols-1
-            items-center gap-4 md:gap-8"
+<div class="head container grid grid-cols-1 sm:grid-cols-2 items-start gap-4"
      itemscope itemtype="http://schema.org/Person">
-    <div class="picture p-8 max-w-[80%] mx-auto basis-20 grow shrink"
-         itemscope itemtype="http://schema.org/ImageObject">
-        <picture>
-            
-            <source srcset="img/main.jpg"
-                    >
-            <img class="main-image u-photo mx-auto"
-            itemprop="contentUrl" alt="Profile picture"
-                 src="img/main.jpg">
-        </picture>
+  <div class="picture p-0 max-w-full"
+       itemscope itemtype="http://schema.org/ImageObject">
+    <picture>
+      <source srcset="img/main.jpg">
+      <img
+        class="main-image u-photo w-full h-auto"
+        itemprop="contentUrl"
+        alt="Profile picture"
+        src="img/main.jpg"
+      >
+    </picture>
+  </div>
+
+  <div class="info text-base leading-snug space-y-2">
+    <a
+      class="u-url font-bold text-xl"
+      rel="me"
+      itemprop="url"
+      href="https://jinhanx.github.io/"
+    >
+      <h1 itemprop="name">Jinhan Xie</h1>
+    </a>
+    <h2 itemprop="jobTitle" class="text-lg">Associate Professor</h2>
+    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+      <p itemprop="streetAddress">
+        Yunnan Key Laboratory of Statistical Modeling and Data Analysis<br>
+        Yunnan University, Kunming, 650091, China
+      </p>
+      <p>
+        E-mail:
+        <a href="mailto:jinhanxie@ynu.edu.cn">jinhanxie@ynu.edu.cn</a>
+        or
+        <a href="mailto:jinhanxie@163.com">jinhanxie@163.com</a>
+      </p>
     </div>
-    <div class="mx-4 ml-8 basis-60 grow shrink-2 leading-snug text-base">
-        <a  class="u-url font-bold" rel="me" itemprop="url" href="https://jinhanx.github.io/">
-            <h1 class="text-black dark:text-zinc-300 p-name border-0"
-                itemprop="name">Jinhan Xie
-            </h1>
-        </a>
-        
-        <h2 itemprop="jobTitle" class="text-xl my-0 border-none">Associate Professor</h2>
-            
-            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="streetAddress">
-                Yunnan Key Laboratory of Statistical Modeling and Data Analysis
-                <br>
-		Yunnan University, Kunming, 650091, China
-		<br>
-		E-mail: <a href="mailto:jinhanxie@ynu.edu.cn">jinhanxie@ynu.edu.cn</a> or <a href="mailto:jinhanxie@163.com">jinhanxie@163.com</a>
-            </span>
-            </div>
-            
-    </div>
+  </div>
 </div>
 
     <h1 id="about-me">About Me</h1>
