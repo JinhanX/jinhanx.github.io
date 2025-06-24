@@ -188,12 +188,11 @@
     width: 100%;
     border-collapse: collapse; /* Ensures that the table's borders collapse together */
     margin-top: 20px;
-    border: 1px solid #ccc; /* Adding a border around the entire table */
+    /* No border lines */
   }
   #employment-table th, #employment-table td {
     padding: 12px;
-    border: 1px solid #ccc; /* Adding borders to table cells */
-    text-align: left;
+    text-align: left;  /* Align content to the left */
     vertical-align: top;
   }
   #employment-table th {
@@ -201,7 +200,8 @@
   }
   .date {
     width: 180px; /* Adjust width as necessary */
-    color: #d9534f;
+    text-align: left; /* Ensures date is aligned to the left */
+    padding-left: 0; /* Ensure the date is flush with the left side */
   }
   #employment-table td {
     word-wrap: break-word; /* Ensures text wraps inside cells */
