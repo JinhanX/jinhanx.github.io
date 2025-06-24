@@ -13,29 +13,6 @@
 <meta name="Description" property="description" content="Hello world">
 
 
-<style>
-      /* 定义计数器 */
-      ol {
-        counter-reset: item; /* 初始化计数器 */
-        padding-left: 20px; /* 左边距 */
-      }
-
-      ol li {
-        list-style-type: none; /* 移除默认的列表样式 */
-        counter-increment: item; /* 增加计数器 */
-      }
-
-      ol li::before {
-        content: counter(item) ". "; /* 使用计数器显示编号 */
-        font-weight: bold; /* 可以自定义样式，例如加粗 */
-      }
-
-      .top-journal {
-        color: #8B0000; /* 深红色 */
-      }
-</style>
-
-
 
 <link rel="stylesheet" href="https://jinhanx.github.io/css/style.min.css">
 
@@ -113,7 +90,7 @@
 <h2>Publication</h2>
   
 <p><small><b>Note</b>: + Co-first authorship; * Corresponding authorship.</small></p>
-<ol>
+<ol class="publication-list">
   <li><strong>Xie, J.+</strong>, Shi, E.+, Sang, P., Shang, Z., Jiang, B., and Kong, L.* (2025). Scalable inference in functional linear regression with streaming data. <em class="top-journal">The Annals of Statistics</em>, accepted.</li>
 
   <li>Zhang, Z., Chen, Z., Liu, Q., <strong>Xie, J.</strong>, and Zhu, H. (2025). Sampling-guided heterogeneous graph neural network with temporal smoothing for scalable longitudinal data imputation. <em>ACM SIGKDD Conference on Knowledge Discovery and Data Mining</em> (<strong class="top-journal">KDD</strong>), acceptance rate: 18.4%.</li>
@@ -161,6 +138,27 @@
   <li>Yan, X., Tang, N.*, <strong>Xie, J.</strong>, Ding, X. and Wang, Z. (2018). Fused mean-variance filter for feature screening. <em>Computational Statistics & Data Analysis</em>, 122, 18-32.</li>
 </ol>
 
+<style>
+  .publication-list {
+  counter-reset: publication-counter; /* 初始化计数器 */
+  padding-left: 0;
+}
+
+.publication-list li {
+  list-style: none; /* 移除默认的列表标记 */
+  counter-increment: publication-counter; /* 增加计数器 */
+  margin-bottom: 10px; /* 每项之间的间距 */
+}
+
+.publication-list li::before {
+  content: "[" counter(publication-counter) "]"; /* 显示编号 */
+  margin-right: 10px; /* 编号与内容之间的间距 */
+}
+
+.top-journal {
+  color: #8B0000; /* 设置期刊名称为深红色 */
+}
+</style>
 
     </main>
     <footer class="footer container h-10 text-center mt-1">
