@@ -239,10 +239,16 @@
                 dark:text-neutral-400 border-none"
           href="https://github.com/hugcis/hugo-astatine-theme">Code</a>
     </li>
-    <li class="ml-2 first:before:content-none before:content-['•']
-                text-neutral-800 dark:text-neutral-400 inline-block list-none">
-      <span class="ml-2">© Jinhan Xie 2025</span>
     </li>
+    <li class="ml-2 first:before:content-none before:content-['•']
+    text-neutral-800 dark:text-neutral-400 inline-block list-none">
+  <span class="ml-2">© Jinhan Xie <span id="current-year"></span></span>
+    </li>
+
+<script>
+  // Get the current year and set it to the span element with id "current-year"
+  document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
   </ul>
 </footer>
 
